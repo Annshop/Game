@@ -1,0 +1,11 @@
+<digiseller.request>
+  <id_seller>12126</id_seller>
+  <order_col>cntsell</order_col>
+  <order_dir>desc</order_dir>
+  <rows>10</rows>
+  <page>1</page>
+  <currency>RUR</currency>
+  <lang>ru-RU</lang>
+  <show_hidden>1</show_hidden>
+  <owner_id>null</owner_id>
+</digiseller.request>

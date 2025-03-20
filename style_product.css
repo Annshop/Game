@@ -1,0 +1,16 @@
+.product-kateg1{
+
+    font-size: 14px;
+     
+       display: flex;
+    align-items: center;
+    
+    margin-top: 15px;
+    margin-bottom: 1px;
+    margin-right: 84px;
+    
+    margin-left: 20px;
+    padding-left: 5px;
+    border-radius: 50px;
+    background-color: #A2DDBB;
+}

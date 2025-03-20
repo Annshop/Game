@@ -1,0 +1,338 @@
+body {
+    font-family: Azeret Mono, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #white;
+    padding: 10px 310px;
+    
+}
+
+
+
+.shap{
+     position: fixed; /* Фиксируем шапку вверху страницы */
+    /* Скрываем шапку за пределами экрана (сдвиг по вертикали) */
+    background-color: white; /* Белый фон для шапки */
+    transition: top 0.3s ease; /* Плавный переход для появления */
+    z-index: 1000; /* Убедитесь, что шапка всегда сверху */
+   width: 1285px;
+   height: 80px;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     justify-content: space-between;
+     margin-left: 310px;
+       top: -100px;
+
+
+}
+.shap.visible {
+    top: 0; /* Шапка появляется вверху */
+
+}
+
+
+.logo {
+  
+ cursor: pointer;
+    font-size: 50px;
+    color: #62CED1;
+    background:#FFFFFF; /* Белый фон */
+    border: 0px solid #62CED1;
+}
+
+
+
+
+
+
+.menu-btn {
+   
+    cursor: pointer;
+     background: #62CED1; /* Белый фон */
+    border-radius: 50px; /* Закругленные углы */
+    width: 170px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Тень для эффекта */
+    transition: 0.1s;
+
+}
+.menu-btn:hover {
+    transform: translateZ(0) scale(1.05);
+}
+.popul{
+    align-items: center;
+
+    display: flex;
+    font-size: 35px;
+    color: #black;
+    height: 80px;
+    margin-left: 310px;
+    margin-right: 310px;
+}
+.search-container {
+
+     background: #white; /* Белый фон */
+      border: 3px solid #62CED1; /* Цвет границы (голубой) */
+    border-radius: 50px; /* Закругленные углы */
+    padding: 0px;
+    width: 700px;
+    height: 38.5px;
+    display: flex;
+    align-items: center;
+
+  
+    font-size: 17px; 
+}
+
+.search-input {
+
+    border: none;
+    outline: none;
+    flex: 1; /* Растягиваем на всю доступную ширину */
+    font-size: 16px;
+    padding:8px;
+   
+    border-radius: 50px;
+   
+
+
+}
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  
+     background: #62CED1; /* Белый фон */
+
+     border-radius: 19px; /* Закругленные углы */
+     width: 60px;
+    height: 43px;
+
+}
+
+
+.korz button {
+    cursor: pointer;
+     border: 2px solid #62CED1; 
+    border-radius: 50px; /* Закругленные углы */
+    width: 80px;
+    height: 40px;
+     background: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Тень для эффекта */
+transition: 0.1s;
+}
+  
+
+.korz:hover {
+    transform: translateZ(0) scale(1.05);
+}
+
+.categories {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    background: #white;
+    padding: 5px;
+    
+   
+}
+
+.categories a {
+
+    margin-right: 40px;
+    margin-left: 41px;
+    cursor: pointer;
+    padding: 8px 8px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.categories a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.icon-img{
+margin-right: 5px;
+margin-bottom: -8px;
+ 
+}
+.icon-img2{
+   margin-right: 5px;
+margin-bottom: -15px; 
+}
+
+.icon-img3{
+    margin-right: 5px;
+margin-bottom: -12px;
+}
+
+.icon-img4{
+    margin-right: 5px;
+margin-bottom: -10px;
+}
+
+.popular {
+    text-align: center;
+    background: #white; 
+
+    margin-left: 10px;
+ 
+}
+
+.popular-img{
+    
+      margin-right: 5px;
+      border-radius: 50px; /* Закругленные углы */
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Тень для эффекта */
+    transition: 0.3s;
+}
+.popular-img:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+
+
+
+
+/* Основной контейнер для товаров */
+.products {
+
+    border: 1px solid black;
+   margin-top: 25px;
+     margin-left: 310px;
+     margin-right: 310px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Сетка с адаптивными колонками */
+  gap: 15px; /* Расстояние между карточками */
+
+}
+.product-kateg1{
+    font-size: 14px;
+    margin-left: 20px;
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+  
+     border-radius: 50px;
+     background-color: #CAA7A2;
+
+
+}
+/* Оформление для карточки товара */
+.product {
+ 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+}
+
+/* Оформление изображения товара */
+.product-image {
+    margin-left: none;
+
+     width: 100%; /* Ширина изображения будет занимать всю доступную ширину контейнера */
+  height: 200px; /* Высота изображения фиксированная */
+  object-fit: cover; /* Изображение будет масштабироваться, чтобы заполнить контейнер, при этом сохраняя пропорции */
+  border-radius: 50px; /* Скругление углов изображений, если нужно */
+}
+
+/* Оформление названия товара */
+.product-price {
+ font-weight: bold;
+color: #202626;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-left: 20px;
+  text-align: left;
+  margin-bottom: 0px;
+
+}
+.product-kol{
+    font-weight: normal;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+
+/* Описание товара */
+.product-description {
+
+    font-family: "Montserrat";
+    word-wrap: break-word;
+   font-size: 17px;
+   height: 62px;
+    width: 175px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-right: 84px;
+    text-align: left;
+    margin-left: 15px;
+    padding-left: 5px;
+    line-height: 1.2em;               /* Устанавливаем межстрочный интервал */
+   max-height: 6em;
+    
+
+}
+.product-card {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Унаследовать цвет текста */
+}
+
+.product-card * {
+    color: black; /* Принудительно черный текст */
+}
+
+.product-card:hover {
+    text-decoration: none;
+}
+
+
+
+
+.buy-btn {
+
+  background-color: #59B2B5;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  margin-left: 14px;
+}
+
+/* Эффект на кнопке при наведении */
+.buy-btn:hover {
+  background-color: #377772;
+}
+
+
